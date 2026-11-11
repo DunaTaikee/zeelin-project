@@ -1,0 +1,123 @@
+{
+  "nodes": [
+    {
+      "id": "北京智芯科技",
+      "category": "上市公司",
+      "relation": "总部",
+      "info": {
+        "revenue": "20亿",
+        "employees": "500+",
+        "industry": "芯片设计",
+        "description": "北京智芯科技是一家领先的AI芯片设计公司，专注于人工智能芯片的研发和产业化。公司在高性能计算、深度学习等领域拥有多项核心专利。",
+        "relatedNews": ["1", "2", "3"]
+      }
+    },
+    {
+      "id": "中科创新",
+      "category": "上市公司",
+      "relation": "合作伙伴",
+      "info": {
+        "revenue": "50亿",
+        "employees": "2000+",
+        "industry": "智能制造",
+        "description": "中科创新是国内领先的智能制造解决方案提供商，致力于工业自动化和智能化转型。",
+        "relatedNews": ["1", "3"]
+      }
+    },
+    {
+      "id": "中芯国际",
+      "category": "上市公司",
+      "relation": "供应商",
+      "info": {
+        "revenue": "100亿",
+        "employees": "10000+",
+        "industry": "芯片制造",
+        "description": "中芯国际是全球领先的集成电路晶圆代工企业，提供0.35微米到14纳米不同技术节点的晶圆代工与技术服务。",
+        "relatedNews": ["2"]
+      }
+    },
+    {
+      "id": "张明",
+      "category": "高管",
+      "relation": "CEO",
+      "info": {
+        "position": "首席执行官",
+        "education": "清华大学",
+        "description": "张明士拥有20年芯片设计经验，曾在多家国际知名芯片公司任职。"
+      }
+    },
+    {
+      "id": "李强",
+      "category": "高管",
+      "relation": "CTO",
+      "info": {
+        "position": "技术总监",
+        "education": "斯坦福大学",
+        "description": "李强博士专注于AI算法优化和芯片架构设计，拥有多项国际专利。"
+      }
+    },
+    {
+      "id": "王芯",
+      "category": "高管",
+      "relation": "CFO",
+      "info": {
+        "position": "财务总监",
+        "education": "北京大学",
+        "description": "王芯女士拥有丰富的科技公司财务管理经验，曾主导多起并购案例。"
+      }
+    },
+    {
+      "id": "智芯研究院",
+      "category": "子公司",
+      "relation": "研发中心",
+      "info": {
+        "focus": "AI算法研发",
+        "location": "北京",
+        "description": "智芯研究院是公司的核心研发机构，专注于前沿AI算法和芯片架构研究。",
+        "relatedNews": []
+      }
+    },
+    {
+      "id": "芯片制造厂",
+      "category": "供应商",
+      "relation": "代工厂",
+      "info": {
+        "capacity": "月产10万片",
+        "process": "7nm",
+        "description": "配备先进的7nm制程生产线，是公司重要的代工合作伙伴。",
+        "relatedNews": []
+      }
+    },
+    {
+      "id": "创新科技",
+      "category": "客户",
+      "relation": "采购方",
+      "info": {
+        "orderValue": "2亿/年",
+        "industry": "智能家居",
+        "description": "创新科技是智能家居领域的领军企业，采用公司的AI芯片开发智能家居产品。",
+        "relatedNews": []
+      }
+    }
+  ],
+  "links": [
+    {"source": "北京智芯科技", "target": "中芯国际", "relation": "芯片代工"},
+    {"source": "北京智芯科技", "target": "中科创新", "relation": "战略合作"},
+    {"source": "北京智芯科技", "target": "张明", "relation": "任职"},
+    {"source": "北京智芯科技", "target": "李强", "relation": "任职"},
+    {"source": "北京智芯科技", "target": "王芯", "relation": "任职"},
+    {"source": "北京智芯科技", "target": "智芯研究院", "relation": "控股"},
+    {"source": "北京智芯科技", "target": "芯片制造厂", "relation": "供应链"},
+    {"source": "北京智芯科技", "target": "创新科技", "relation": "供应商"},
+    {"source": "中科创新", "target": "创新科技", "relation": "投资"}
+  ],
+  "recommendations": [
+    {
+      "query": "帮我找三家潜在并购标的",
+      "response": {
+        "text": "基于您的需求，我为您推荐以下三家潜在并购标的：\n\n1. 智芯研究院\n- 主营业务：AI算法研发\n- 优势：拥有强大的研发团队和专利储备\n- 协同效应：可强化公司核心技术能力\n\n2. 芯片制造厂\n- 主营业务：芯片制造代工\n- 优势：拥有成熟的7nm制程工艺\n- 协同效应：打通上下游产业链\n\n3. 创新科技\n- 主营业务：智能家居解决方案\n- 优势：较强的市场渠道和客户资源\n- 协同效应：拓展下游应用场景",
+        "highlighted_nodes": ["智芯研究院", "芯片制造厂", "创新科技"]
+      }
+    }
+  ]
+}
